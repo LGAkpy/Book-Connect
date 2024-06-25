@@ -21,7 +21,7 @@ const Livros = [
   {
     titulo: "Cem Anos de Solidão",
     autor: "Gabriel García Márquez",
-    capa: require("../../../assets/solidão.jpg"),
+    capa: require("../../../assets/solidao.jpg"),
   },
   {
     titulo: "Dom Quixote",
@@ -42,6 +42,106 @@ const Livros = [
     titulo: "Moby Dick",
     autor: "Herman Melville",
     capa: require("../../../assets/dick.jpg"),
+  },
+  {
+    titulo: "Orgulho e Preconceito",
+    autor: "Jane Austen",
+    capa: require("../../../assets/orgulho_preconceito.jpg"),
+  },
+  {
+    titulo: "O Grande Gatsby",
+    autor: "F. Scott Fitzgerald",
+    capa: require("../../../assets/gatsby.jpg"),
+  },
+  {
+    titulo: "Crime e Castigo",
+    autor: "Fyodor Dostoevsky",
+    capa: require("../../../assets/crime_castigo.jpg"),
+  },
+  {
+    titulo: "O Senhor dos Anéis: A Sociedade do Anel",
+    autor: "J.R.R. Tolkien",
+    capa: require("../../../assets/sociedade_anel.jpg"),
+  },
+  {
+    titulo: "O Pequeno Príncipe",
+    autor: "Antoine de Saint-Exupéry",
+    capa: require("../../../assets/pequeno_principe.jpg"),
+  },
+  {
+    titulo: "Os Miseráveis",
+    autor: "Victor Hugo",
+    capa: require("../../../assets/miseraveis.jpg"),
+  },
+  {
+    titulo: "Jane Eyre",
+    autor: "Charlotte Brontë",
+    capa: require("../../../assets/jane_eyre.jpg"),
+  },
+  {
+    titulo: "A Revolução dos Bichos",
+    autor: "George Orwell",
+    capa: require("../../../assets/revolucao_bichos.jpg"),
+  },
+  {
+    titulo: "O Nome da Rosa",
+    autor: "Umberto Eco",
+    capa: require("../../../assets/nome_rosa.jpg"),
+  },
+  {
+    titulo: "O Conde de Monte Cristo",
+    autor: "Alexandre Dumas",
+    capa: require("../../../assets/conde_monte_cristo.jpg"),
+  },
+  {
+    titulo: "A Metamorfose",
+    autor: "Franz Kafka",
+    capa: require("../../../assets/metamorfose.jpg"),
+  },
+  {
+    titulo: "Drácula",
+    autor: "Bram Stoker",
+    capa: require("../../../assets/dracula.jpg"),
+  },
+  {
+    titulo: "Frankenstein",
+    autor: "Mary Shelley",
+    capa: require("../../../assets/frankenstein.jpg"),
+  },
+  {
+    titulo: "O Morro dos Ventos Uivantes",
+    autor: "Emily Brontë",
+    capa: require("../../../assets/morro_ventos.jpg"),
+  },
+  {
+    titulo: "Guerra e Paz",
+    autor: "Leo Tolstoy",
+    capa: require("../../../assets/guerra_paz.jpg"),
+  },
+  {
+    titulo: "O Retrato de Dorian Gray",
+    autor: "Oscar Wilde",
+    capa: require("../../../assets/dorian_gray.jpg"),
+  },
+  {
+    titulo: "Alice no País das Maravilhas",
+    autor: "Lewis Carroll",
+    capa: require("../../../assets/alice.jpg"),
+  },
+  {
+    titulo: "A Divina Comédia",
+    autor: "Dante Alighieri",
+    capa: require("../../../assets/divina_comedia.jpg"),
+  },
+  {
+    titulo: "Os Três Mosqueteiros",
+    autor: "Alexandre Dumas",
+    capa: require("../../../assets/tres_mosqueteiros.jpg"),
+  },
+  {
+    titulo: "O Sol é Para Todos",
+    autor: "Harper Lee",
+    capa: require("../../../assets/sol_para_todos.jpg"),
   },
 ];
 
@@ -68,7 +168,7 @@ const BibliotecaDeLivros = () => {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.textoDestaque}>TENDÊNCIA AGORA</Text>
+      <Text style={styles.textoDestaque}>Recomendados</Text>
       <TextInput
         style={styles.searchBar}
         placeholder="Buscar livro..."

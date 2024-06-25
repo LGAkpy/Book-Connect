@@ -47,64 +47,64 @@ export const StackNavigate = () => {
 };
 
 // Navegação em tab (Comentada, já que não é utilizada atualmente)
-// export const TabNavigate = () => {
-//   return (
-//     <Tab.Navigator>
-//       <Tab.Screen
-//         name="Home"
-//         component={Login}
-//         options={{
-//           tabBarIcon: () => (
-//             <SimpleLineIcons name="home" size={24} color="black" />
-//           ),
-//           tabBarActiveTintColor: "tomato",
-//           tabBarInactiveTintColor: "gray",
-//         }}
-//       />
-//       <Tab.Screen
-//         name="Conta"
-//         component={Conta}
-//         options={{
-//           tabBarIcon: () => <AntDesign name="user" size={24} color="black" />,
-//           tabBarActiveTintColor: "tomato",
-//           tabBarInactiveTintColor: "gray",
-//         }}
-//       />
-//       <Tab.Screen
-//         name="Pagamento"
-//         component={Pagamento}
-//         options={{
-//           tabBarIcon: () => (
-//             <AntDesign name="shoppingcart" size={24} color="black" />
-//           ),
-//           tabBarActiveTintColor: "tomato",
-//           tabBarInactiveTintColor: "gray",
-//           tabBarBadge: 3,
-//         }}
-//       />
-//       <Tab.Screen
-//         name="Pontos"
-//         component={Pontos}
-//         options={{
-//           tabBarIcon: () => <AntDesign name="user" size={24} color="black" />,
-//           tabBarActiveTintColor: "tomato",
-//           tabBarInactiveTintColor: "gray",
-//         }}
-//       />
-//       <Tab.Screen
-//         name="Configurações"
-//         component={Configuracoes}
-//         options={{
-//           tabBarIcon: () => (
-//             <AntDesign name="settings" size={24} color="black" />
-//           ),
-//           tabBarActiveTintColor: "tomato",
-//           tabBarInactiveTintColor: "gray",
-//         }}
-//       />
-//     </Tab.Navigator>
-//   );
-// };
+export const TabNavigate = () => {
+  return (
+    <Tab.Navigator>
+      <Tab.Screen
+        name="Home"
+        component={Login}
+        options={{
+          tabBarIcon: () => (
+            <SimpleLineIcons name="home" size={24} color="black" />
+          ),
+          tabBarActiveTintColor: "tomato",
+          tabBarInactiveTintColor: "gray",
+        }}
+      />
+      <Tab.Screen
+        name="Conta"
+        component={Conta}
+        options={{
+          tabBarIcon: () => <AntDesign name="user" size={24} color="black" />,
+          tabBarActiveTintColor: "tomato",
+          tabBarInactiveTintColor: "gray",
+        }}
+      />
+      <Tab.Screen
+        name="Pagamento"
+        component={Pagamento}
+        options={{
+          tabBarIcon: () => (
+            <AntDesign name="shoppingcart" size={24} color="black" />
+          ),
+          tabBarActiveTintColor: "tomato",
+          tabBarInactiveTintColor: "gray",
+          tabBarBadge: 3,
+        }}
+      />
+      <Tab.Screen
+        name="Pontos"
+        component={Pontos}
+        options={{
+          tabBarIcon: () => <AntDesign name="user" size={24} color="black" />,
+          tabBarActiveTintColor: "tomato",
+          tabBarInactiveTintColor: "gray",
+        }}
+      />
+      <Tab.Screen
+        name="Configurações"
+        component={Configuracoes}
+        options={{
+          tabBarIcon: () => (
+            <AntDesign name="settings" size={24} color="black" />
+          ),
+          tabBarActiveTintColor: "tomato",
+          tabBarInactiveTintColor: "gray",
+        }}
+      />
+    </Tab.Navigator>
+  );
+};
 
 // Exemplo de componente DialogActionList para ilustração
 const DialogActionList = ({ children }) => {
@@ -116,14 +116,14 @@ export const DrawerNavigate = () => {
   return (
     <Drawer.Navigator initialRouteName="Home">
       <Drawer.Screen
-        name="Home"
+        name="Início"
         component={Home}
         options={{
           drawerActiveTintColor: '#fff',
           drawerActiveBackgroundColor: '#fcbe7c',
           drawerInactiveTintColor: "white",
           drawerStyle: {
-            backgroundColor: '#c48c65'
+            backgroundColor: '#c48c65',
           },
           drawerIcon: ({ focused }) => (
             <SimpleLineIcons 
@@ -135,7 +135,7 @@ export const DrawerNavigate = () => {
         }}
       />
       <Drawer.Screen
-        name="Conta"
+        name="Perfil"
         component={Conta}
         options={{
           drawerActiveTintColor: '#fff',

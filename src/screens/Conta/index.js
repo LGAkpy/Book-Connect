@@ -58,7 +58,7 @@ const PerfilUsuario = () => {
           <Text style={styles.textoBotaoRedeSocial}>Twitter</Text>
         </TouchableOpacity>
       </View>
-      <Text style={styles.livrosConcluidos}>Livros Concluídos: 12 {usuario.livrosConcluidos}</Text>
+      <Text style={styles.livrosConcluidos}>Livros Concluídos: {usuario.livrosConcluidos}</Text>
     </View>
   );
 };
